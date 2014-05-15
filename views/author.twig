@@ -1,0 +1,14 @@
+{% extends 'custom.twig' %}
+{% block homepage %}
+{#empty#}
+{% endblock homepage %}
+{% block cover_slug %}
+<p class="medium">A principle-based motivational seminar for personal growth, success and achievement.</p>
+{% endblock %}
+{% block content %}
+<div class="col-md-8 post">
+{% for post in posts %}
+	{% include ["content-"~post.post_type~".twig", "content.twig"] %}
+{% endfor %}
+    </div>
+{% endblock %}

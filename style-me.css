@@ -1,0 +1,528 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 62%;
+    line-height: 1.5;
+    color: #555555;
+    font-family: OpenSansRegular, "Helvetica Neue", Helvetica, Arial sans-serif;
+    /*background-color: rgba(50, 135, 195, 0.1);*/
+    background-image: url("images/swirl.png");
+}
+
+#page {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+section, footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: OpenSansRegular, "Helvetica Neue", Helvetica, Arial sans-serif;
+    padding-top: 0;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+p, ul {
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+color1 {
+    background-color:#000000;
+}
+color2 {
+    color:#7E0A00;
+}
+color3 {
+    color:#F9901E;
+}
+color4 {
+    color:#FEFEFD;
+}
+color5 {
+    color:#FFFE4E;
+}
+color6 {
+    color:#A93A0A;
+}
+color7 {
+    color:#8F2E08;
+}
+color8 {
+    color:#E55F0F;
+}
+color9 {
+    color:#9F2A05;
+}
+.blue {
+    color: #3287c3;
+}
+
+.lead {
+    font-size: 21px;
+}
+
+.reviews-note {
+    font-family: OpenSansSemiboldItalic, "Helvetica Neue", Helvetica, Arial sans-serif;
+    text-align: center;
+    padding: 20px;
+    /*font-size: 51px;*/
+}
+#video-screen {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 21px;
+    background-color: #fff;
+    /* background-image: url("images/shattered.png"); */
+    color: #616161;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+#video-screen aside {
+    max-width: 680px;
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video.window {
+
+    display: block;
+    width: 780px;
+    height: 380px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+aside.reviews {
+    padding: 20px;
+    /*margin-bottom: 20px;*/
+}
+
+.reviews h3{
+    /*color: #3287c3;*/
+    font-size: 42px;
+}
+
+p.reviewer {
+    font-size: 21px;
+    font-family: OpenSansSemibold;
+    text-align: right;
+}
+
+.orange {
+    color: #F56F14;
+}
+
+
+#features {
+    padding-bottom: 60px;
+    font-size: 18px;
+}
+#features h2 {
+    color: #2c6da1;
+    font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial sans-serif;
+    font-size: 28px;
+}
+
+#features p{
+    margin-bottom: 40px;
+}
+
+#features p.copy {
+    min-height: 200px;
+}
+
+#features .principles {
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+p.f-icon {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    display: block;
+    width: 100%;
+    /*margin-bottom: 40px;*/
+}
+
+img.f-icon {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+}
+
+.orange-bg {
+    background-color: #F56F14;
+}
+
+#bio {
+    min-height: 200px;
+    background-image: url("images/square_bg.png");
+    background-color: #3276B1;
+    color: #ffffff;
+}
+
+#bio figure {
+    padding: 10px;
+
+}
+
+#bio figure {
+    max-width: 370px;
+}
+
+
+#bio figcaption small {
+    display:block;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.jumbotron {
+    padding-top: 100px;
+    height: 65%;
+    background-image: url("images/a-movtivated-me-bg.jpg");
+    background-size: cover;
+    /*background-position: center -250px;*/
+    color: #fff;
+    font-family: OpenSansRegular, "Helvetica Neue", Helvetica, Arial sans-serif;
+}
+
+.home .jumbotron {
+    min-height: 430px;
+    height: 500px;
+}
+
+.jumbotron h1 {
+    font-size: 90px;
+    font-family: OpenSansRegular, "Helvetica Neue", Helvetica, Arial sans-serif;;
+}
+
+.home .jumbotron p{
+    font-size: 36px;
+    font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial sans-serif;;
+}
+
+.principles h1 {
+    text-align: center;
+}
+
+footer {
+    min-height: 300px;
+    background-color: #F9901E;
+    /*background-image: url("images/square_bg.png");*/
+    /*border-top: 1px dotted #d6d6d6;*/
+    color: #fff;
+}
+
+footer .info {
+    margin-bottom: 40px;
+}
+
+footer .copyright {
+    text-align: center;
+
+}
+
+footer .widget {
+    background-color: #F9901E;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    /*min-height: 150px;*/
+}
+/********************
+ Font Sizes
+ ********************/
+/* Paragraph font size*/
+p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+article p {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+aside p {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+.headlines {
+    font-size: 90px;
+    font-size: 10.1rem;
+}
+.titles {
+    font-size: 82px;
+    font-size: 8.2rem;
+}
+.subtitles {
+    font-size: 68px;
+    font-size: 6.8rem;
+}
+.xlarge {
+    font-size: 41px;
+    font-size: 4.1rem;
+}
+.large {
+    font-size: 32px;
+    font-size: 3.2rem;
+}
+.medium {
+    font-size: 26px;
+    font-size: 2.6rem;
+}
+.default-font {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+.small {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+.tiny {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+h1 {
+    font-size: 51px;
+    font-size: 5.1rem;
+    margin-top: 0;
+}
+h2 {
+    font-size: 41px;
+    font-size: 4.1rem;
+}
+h3 {
+    font-size: 31px;
+    font-size: 3.1rem;
+}
+
+aside h1, aside h3 {
+    font-size: 26px;
+    font-size: 2.6rem;
+}
+article h1, article h3 {
+    font-size: 41px;
+    font-size: 4.1rem;
+}
+footer h1, footer h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+footer aside li {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer aside ul {
+    padding-left: 0;
+}
+
+footer a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+}
+/************************************
+ *
+ * GOING MOBILE HERE
+ *
+ ***********************************/
+/*
+ * Laptops/Tablets (1024px)
+ *
+ */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    .jumbotron h1 {
+        font-size: 80px;
+        font-family: OpenSansRegular, "Helvetica Neue", Helvetica, Arial sans-serif;;
+    }
+    .headlines {
+        font-size: 80px;
+        font-size: 8.08rem;
+    }
+    .titles {
+        font-size: 65px;
+        font-size: 6.56rem;
+    }
+    .subtitles {
+        font-size: 54px;
+        font-size: 5.44rem;
+    }
+    .xlarge {
+        font-size: 32px;
+        font-size: 3.28rem;
+    }
+    .large {
+        font-size: 25px;
+        font-size: 2.56rem;
+    }
+    .medium {
+        font-size: 20px;
+        font-size: 2.08rem;
+    }
+    .default-font {
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+    .small {
+        font-size: 11px;
+        font-size: 1.12rem;
+    }
+    .tiny {
+        font-size: 9px;
+        font-size: 0.96rem;
+    }
+    h1 {
+        font-size: 40px;
+        font-size: 4.08rem;
+    }
+    h2 {
+        font-size: 32px;
+        font-size: 3.28rem;
+    }
+    h3 {
+        font-size: 24px;
+        font-size: 2.48rem;
+    }
+}
+/*
+ *Phones(480px)
+ *
+ */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .jumbotron h1 {
+        font-size: 60px;
+        font-family: OpenSansRegular, "Helvetica Neue", Helvetica, Arial sans-serif;;
+    }
+    .headlines {
+        font-size: 60px;
+        font-size: 6.06rem;
+    }
+    .titles {
+        font-size: 49px;
+        font-size: 4.92rem;
+    }
+    .subtitles {
+        font-size: 40px;
+        font-size: 4.08rem;
+    }
+    .xlarge {
+        font-size: 24px;
+        font-size: 2.46rem;
+    }
+    .large {
+        font-size: 19px;
+        font-size: 1.92rem;
+    }
+    .medium {
+        font-size: 15px;
+        font-size: 1.56rem;
+    }
+    .default-font {
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+    .small {
+        font-size: 8px;
+        font-size: 0.84rem;
+    }
+    .tiny {
+        font-size: 7px;
+        font-size: 0.72rem;
+    }
+    h1 {
+        font-size: 30px;
+        font-size: 3.06rem;
+    }
+    h2 {
+        font-size: 24px;
+        font-size: 2.46rem;
+    }
+    h3 {
+        font-size: 18px;
+        font-size: 1.86rem;
+    }
+}
+
+#sidebar ul {
+    padding-left: 0;
+}
+
+#sidebar li{
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+#content form label {
+ display: block;
+}
+
+
+#content form label span{
+    font-size: 12px;
+    color: #777777;
+    margin-left: 10px;
+}
+
+#content form {
+    margin: 5px;
+    margin-top: 60px;
+}
+
+#content form input[type="text"],
+#content form input[type="email"],
+#content form textarea{
+   width: 70%;
+   padding: 5px;
+   margin-bottom: 10px;
+}
+
+#content form textarea {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#content form input[type="submit"] {
+    padding: 7px;
+    min-width: 150px;
+}
+
+#bio  h2 > a {
+   color:#fff;
+   text-decoration: none;
+}
+
+#bio  h2 > a:hover {
+   border-bottom: 1px #fff dotted;
+}
+
+#sidebar {
+    padding-left: 40px;
+}
+
+#sidebar li {
+    border-bottom: 1px dotted;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

@@ -1,0 +1,61 @@
+/*
+Theme Name: BaseTheme
+Description: BaseStart is a simple BaseJump starter theme built using BootStrap, Timber Library
+Theme URI: http://shawnsandy.com/
+Author: Shawn Sandy
+Author URI: http://shawnsandy.com/
+Version: 0.1
+License: GPL (source)
+License URI: license.txt
+Tags:
+
+*/
+
+
+/*Hideadminbar*/
+#hide-wpadminbar
+{
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+    background-color: #191818;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    bottom: 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border-bottom: 0px solid #000000;
+    display: none;
+}
+.logged-in #hide-wpadminbar
+{
+    display: block;
+
+}
+#hide-wpadminbar:hover, #hide-wpadminbar:focus
+{
+    color: #FF0000;
+}
+
+.bar-to-bottom {
+    top: auto !important;
+    bottom: 0;
+}
+
+.hidden-admin-bar {
+    padding-top: -40px;
+    margin-top: -50px;
+}
+
+body.admin-bar #footer {
+    padding-bottom: 28px;
+}
+#wpadminbar {
+    /*top: auto !important;*/
+    bottom: 0;
+}
+.bar-to-bottom .quicklinks .menupop ul {
+    bottom: 28px;
+}
+

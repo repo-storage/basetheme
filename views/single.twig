@@ -1,0 +1,45 @@
+{% extends 'custom.twig' %}
+{% block homepage %}
+{#empty#}
+{% endblock homepage %}
+{% block cover_slug %}
+<p class="medium">A principle-based motivational seminar for personal growth, success and achievement.</p>
+{% endblock %}
+{% block content %}
+<div class="col-md-8 post">
+		<article {{ function('post_class') }} id="post-{{post.ID}}">
+			<section class="article-content">
+				<h1>{{post.post_title}}</h1>
+
+				<p class="blog-author">
+					<span>By</span><a href="{{post.author.get_path}}"> {{ post.author.name }} </a><span>&bull;</span> {{ post.display_date }}
+				</p>
+
+				<div class="article-body">
+					{{post.get_content}}
+				</div>
+			</section>
+
+                        <section id="comments" class="comments">
+
+					<h2 class="">
+
+{{ post.comment_count }}  Thought{% if post.comment_count > 1 %}s{% endif %}!
+                                            </h2>
+
+
+                            <ol class="commentslist">
+                            {% for cmt in post.get_comments() %}
+                                                {% include "comment.twig" with {comment:cmt} %}
+					{% endfor %}
+                            </ol>
+
+
+                                {{ comment_form }}
+
+			</section>
+
+		</article>
+        </div>
+
+{% endblock content %}

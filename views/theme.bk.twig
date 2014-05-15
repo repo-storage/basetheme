@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{wp_title}}</title>
+        <meta name="description" content="{{bloginfo('description')}}">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="{{ theme_url }}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ theme_url }}/css/main.css">
+        <link rel="stylesheet" href="{{ theme_url }}/fonts/open-sans/stylesheet.css"/>
+    {#<link rel="stylesheet" href="{{ stylesheet_uri }}"/>#}
+        <link rel="stylesheet" href="{{ theme_url }}/style-me.css">
+
+        <script src="{{ theme_url }}/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body class="{{body_class}}">
+        <div id="page">
+
+
+            <!--[if lt IE 7]>
+            <p class="chromeframe">
+                You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+                your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+                improve your experience.
+            </p>
+            <![endif]-->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{ site_url }}">A Motivated Me Seminar</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a href="{{ site_url }}">Home</a></li>
+                            <li><a href="http://amotivatedme.com/a-motivated-me-seminar/">About</a></li>
+                            <li><a href="{{ site_url }}/contact">Contact</a></li>
+
+                            </li>
+                        </ul>
+                        <!--<form class="navbar-form navbar-right">-->
+                        <!--<div class="form-group">-->
+                        <!--<input type="text" placeholder="Email" class="form-control">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                        <!--<input type="password" placeholder="Password" class="form-control">-->
+                        <!--</div>-->
+                        <!--<button type="submit" class="btn btn-success">Sign in</button>-->
+                        <!--</form>-->
+                    </div>
+                    <!--/.navbar-collapse -->
+                </div>
+            </div>
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="headlines">A Motivated Me Seminar!</h1>
+{% block cover_slug %}
+                    <p>
+                        A principle-based motivational seminar for personal growth, success and achievement.
+                    </p>
+                    <p><a href="{{ site_url }}/a-motivated-me-seminar" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+{% endblock cover_slug %}
+
+                </div>
+            </div>
+{% block homepage %}
+{% endblock homepage %}
+{% block main %}
+
+            <section id="content" role="main" class="content-wrapper">
+                <div class="container">
+
+                    <div class="row">
+                         {% block content %}
+                        <div class="col-md-8 post">
+                             {% if title %}<h1>{{title}}</h1>{% endif %}
+
+                            Sorry, no content
+
+                        </div>
+{% endblock content %}
+                      {% block sidebar %}
+                        <div id="sidebar" class="col-md-4 sidebar">
+                            <nav>
+{% include 'menu.twig' %}
+                            </nav>
+                            <aside>
+
+                                <p class="default-text">
+                                    {{ config.site_slug }}
+                                </p>
+                            </aside>
+
+{% if sidebars.sidebar is empty %}
+                            <aside>
+                                <h1>Sidebar</h1>
+                                <p>{{ sample_widget }}</p>
+                            </aside>
+                                    {% endif %}
+                                {{ sidebars.sidebar }}
+                        </div>
+                        {% endblock sidebar %}
+                    </div>
+                </div>
+            </section>
+{% endblock %}
+
+            <footer>
+                <div class="container info">
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h1>About the Seminars</h1>
+                                <p>The Seminar will be a powerful, transformative experience.  Over the weekend you will be challenged, excited, empowered, and motivated to change your life for the better. You won’t want to miss it! <a href="{{ site_url }}/a-motivated-me-seminar">Find out more</a></p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                                {{ sidebars.info_2 }}
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h1>Contact Us.</h1>
+                                <p>
+                                   We are eager to answer any questions you might have and we look forward to talking with you, please use any one of the links below to reach us.
+                                </p>
+                                <address>
+                                    <strong><a href="{{ site_url }}/contact">
+                                        A Motivated Me Seminar.</strong></a><br>
+                                    <a href="mailto:info@amotivatedme.com">@InfoDesk</a></br>
+                                    <abbr title="Phone">P:</abbr> 1-954-840-5392
+                                </address>
+
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">&copy; Company 2013</p>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="{{ theme_url }}/js/vendor/bootstrap.min.js"></script>
+
+        <script src="{{ theme_url }}js/main.js"></script>
+
+        <script>
+        //    var _gaq = [
+        //        ['_setAccount', 'UA-XXXXX-X'],
+        //        ['_trackPageview']
+        //    ];
+        //    (function (d, t) {
+        //        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        //        g.src = '//www.google-analytics.com/ga.js';
+        //        s.parentNode.insertBefore(g, s)
+        //    }(document, 'script'));
+        </script>
+    </body>
+</html>
+
